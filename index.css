@@ -1,0 +1,231 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*, *::before, *::after{
+	box-sizing: border-box;
+	/* outline: solid 1px; */
+}
+
+body{ font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+ 
+
+}
+img{display: block;
+    width: 100%;
+	height: auto;
+}
+a{display:inline-block;
+text-decoration: none;
+color: #4B4B4B;
+
+}
+
+
+.menu{
+	display: flex;
+	padding: 24px 80px;
+justify-content: center;
+align-items: center;
+gap: 40px;
+align-self: stretch;
+}
+
+.menu li{
+	font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; 
+color:#000000;
+}
+.wrap1{
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+
+}
+.banner{
+width: 50%;
+align-items: start;
+height: auto;
+}
+.title{
+background-image: url(images/Hero\ Section2.png);
+width: 50%;	
+height: auto;
+display: flex;
+justify-content:start;
+align-items: center;
+}
+
+.title h1{
+color: #0027D5;
+font-family: "Noto Sans TC";
+font-size: 120px;
+font-weight: 900;
+line-height: 150%; 
+margin-bottom: 12px;
+
+}
+.title p{
+color: #0027D5;
+font-family: "Noto Sans TC";
+font-size: 28px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%;
+}
+.title-content{
+margin-left: 80px;
+	 
+}
+.wrap2{
+	margin: 0 auto;
+	display: flex;
+	justify-content: start;
+    align-items: center;
+	border-top : 1px solid ;color:  #6C757D;
+	border-bottom : 1px solid ;color:  #6C757D;
+}
+.wrap2 .banner{
+width: 948px;
+}
+
+.wrap2 .news{
+	width: 948px;
+	margin-left: 24px;
+    display: flex;
+	flex-direction: column;
+	align-self: center;
+	
+
+
+
+
+}
+	
+.news .datetime{
+	margin-bottom: 4px;
+	color: #000;
+font-size: 16px;
+font-weight: 500;
+line-height: 150%; 
+}
+
+.news-title {
+color: #0027D5;
+font-family: "Noto Sans TC";
+font-size: 24px;
+font-weight: 500;
+line-height: 150%;
+background: #FBFBFB;
+display: flex;
+align-items: center;
+align-self: stretch;
+margin-bottom: 8px;
+}
+.tag{
+width: 88px;
+height: 36px;
+padding: 6px 12px;
+margin: 8px;
+border-radius: 40px;
+background: #0027D5;
+color: #FFF;
+font-size: 16px;
+font-weight: 700;
+line-height: 150%;
+}
+
+.news h2{
+color: #000;
+font-size: 28px;
+font-weight: 700;
+line-height: 150%; 
+margin-bottom: 8px;
+}
+.article-text {
+
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 16px;
+  max-width: 636px;
+  margin-bottom: 16px;
+ 
+
+
+color: #000;
+width: 636px;
+height: 48px;
+font-size: 16px;
+font-weight: 500;
+line-height: 150%;
+}
+
+.read-btn{
+	width: 94px; height: 40px;
+	padding: 8px 16px;
+    align-items: center;
+	overflow: hidden;
+    width: fit-content;
+color:  #4b4b4b;
+font-size: 16px;
+font-weight: 500;
+line-height: 150%; 
+border-radius: 40px;
+border: 1px solid #000;
+
+
+}
