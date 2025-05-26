@@ -52,11 +52,13 @@ table {
 }
 *, *::before, *::after{
 	box-sizing: border-box;
-	/* outline: solid 1px; */
+	
 }
-
+/*  整體設置 */
 body{ font-family: "Noto Sans TC", sans-serif;
   font-optical-sizing: auto;
+  background-color: FBFBFB;
+  border: #000 solid 1px;
  
 
 }
@@ -65,19 +67,19 @@ img{display: block;
 	height: auto;
 }
 a{display:inline-block;
-text-decoration: none;
-color: #4B4B4B;
+	text-decoration: none;
+	color: #4B4B4B;
 
 }
 
-
+/* 表頭 */
 .menu{
 	display: flex;
 	padding: 24px 80px;
-justify-content: center;
-align-items: center;
-gap: 40px;
-align-self: stretch;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	align-self: stretch;
 }
 
 .menu li{
@@ -87,6 +89,8 @@ font-weight: 700;
 line-height: 150%; 
 color:#000000;
 }
+
+/* 區塊一 */
 .wrap1{
 	margin: 0 auto;
 	display: flex;
@@ -128,34 +132,36 @@ line-height: 150%;
 margin-left: 80px;
 	 
 }
+
+/* 區塊二 */
 .wrap2{
 	margin: 0 auto;
 	display: flex;
-	justify-content: start;
+	justify-content: center; 
     align-items: center;
 	border-top : 1px solid ;color:  #6C757D;
 	border-bottom : 1px solid ;color:  #6C757D;
 }
 .wrap2 .banner{
-width: 948px;
+width: 50%;
 }
 
-.wrap2 .news{
-	width: 948px;
+.news-container{
+	width: 50%;
 	margin-left: 24px;
-    display: flex;
-	flex-direction: column;
-	align-self: center;
-	
-
-
-
+    
 
 }
+
+.news{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 	
+}
 .news .datetime{
-	margin-bottom: 4px;
-	color: #000;
+margin-bottom: 4px;
+color: #000;
 font-size: 16px;
 font-weight: 500;
 line-height: 150%; 
@@ -167,7 +173,6 @@ font-family: "Noto Sans TC";
 font-size: 24px;
 font-weight: 500;
 line-height: 150%;
-background: #FBFBFB;
 display: flex;
 align-items: center;
 align-self: stretch;
@@ -193,7 +198,7 @@ font-weight: 700;
 line-height: 150%; 
 margin-bottom: 8px;
 }
-.article-text {
+.news-text {
 
 
   display: -webkit-box;
@@ -214,7 +219,7 @@ font-weight: 500;
 line-height: 150%;
 }
 
-.read-btn{
+.btn{
 	width: 94px; height: 40px;
 	padding: 8px 16px;
     align-items: center;
@@ -226,6 +231,161 @@ font-weight: 500;
 line-height: 150%; 
 border-radius: 40px;
 border: 1px solid #000;
+}
+
+.btn:hover{
+	color: #FBFBFB;
+	background-color: #0027D5;
+	border: none;
+
+}
+
+/*  搜尋列 */
+.search-container{
+	width: 1296px;
+	margin: 0 auto;
+	margin-top: 80px;
+	margin-bottom: 40px;
+
+}
+
+.search{
+width: 416px;
+height: 56px;
+display: flex;
+justify-content: start;
+align-items: center;
+border-radius: 40px;
+border: 1px solid  #4B4B4B;
+gap: 10px;
+padding-left: 16px;
+}
+
+.searchicon{
+	width: 16px;
+	height: 16px;
+
+}
+.search-text{
+	width: 318px;
+color: #4B4B4B;
+font-size: 16px;
+font-weight: 500;
+line-height: 150%;}
 
 
+/* 卡片區塊 */
+ .card-container{
+	width: 1296px;
+	margin: 0 auto;
+	
+}
+.card{
+	width: 416px;
+}
+.cardtime{
+	margin-bottom: 4px;
+	margin-top: 16px;
+}
+.card .hashtag{
+	color: #0027D5;
+	font-size: 24px;
+    font-weight: 500;
+    line-height: 150%;
+	margin-right: 8px;
+
+}
+.card .cardtitle{
+	color: #000;
+font-size: 28px;
+font-weight: 700;
+line-height: 150%; 
+margin-bottom: 8px;
+} 
+
+.card .card-article{
+	 display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 16px;
+  max-width: 416px;
+  margin-bottom: 16px;
+ 
+
+
+color: #4B4B4B;
+width: 636px;
+height: 48px;
+font-size: 16px;
+font-weight: 500;
+line-height: 150%;
+}
+
+.card-group{
+	display: flex;
+	flex-wrap: wrap;
+    gap: 80px 24px;
+}
+
+/* 頁面列表 */
+
+.page-container{
+	
+	margin: auto 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 80px;
+
+	
+}
+
+.page{
+	width: 328px;
+	height: 56px;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	border-radius: 40px;
+	background-color: #FFF;
+	
+
+	
+	
+
+
+}
+
+.page-number{
+display: flex;
+align-items: center; 
+padding-top: 8px;
+padding-bottom: 8px;
+}
+.left-arrow{
+
+	width: 24px;
+	height: 24px;
+	background-image: url(images/icon/chevron-left\ 1.png);
+}
+
+.right-arrow{
+	width: 24px;
+	height: 24px;
+	background-image: url(images/icon/chevron-right\ 1.png);
+}
+.page-link{
+text-align: center;
+width: 40px;
+height: 40px;
+font-size: 16px;
+font-weight: 500;
+line-height: 150%;
+text-align: center;
+padding-top: 8px;
+padding-bottom: 8px;
+}
+.page-link:hover{
+	color: #0027D5;
 }
